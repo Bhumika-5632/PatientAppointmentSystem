@@ -18,6 +18,11 @@ namespace PatientAppointmentSystem
         static List<Appointment> appointments = new List<Appointment>();
         static int nextId = 1;
 
+//        Console.WriteLine("Welcome to HCA Healthcare Patient Appointment System");
+//Console.WriteLine("Current date: " + DateTime.Today.ToLongDateString());
+//Console.WriteLine();
+
+
         static void Main(string[] args)
         {
             bool running = true;
@@ -25,6 +30,10 @@ namespace PatientAppointmentSystem
             while (running)
             {
                 Console.Clear();
+                Console.WriteLine("Welcome to HCA Healthcare Patient Appointment System");
+                Console.WriteLine("Current date: " + DateTime.Today.ToLongDateString());
+                Console.WriteLine();
+
                 Console.WriteLine("=== Patient Appointment System (HCA Healthcare Demo) ===");
                 Console.WriteLine("1. Add Appointment");
                 Console.WriteLine("2. View All Appointments");
